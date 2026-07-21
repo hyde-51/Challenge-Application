@@ -1,0 +1,16 @@
+# React / Node
+Frontend/node_modules/
+Frontend/build/
+Frontend/dist/
+
+# Spring Boot / Java
+Backend/challengeApp/target/
+Backend/build/
+Backend/.gradle/
+Backend/*.jar
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+.DS_Store
