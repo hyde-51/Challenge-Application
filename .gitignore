@@ -5,9 +5,8 @@ Frontend/dist/
 
 # Spring Boot / Java
 Backend/challengeApp/target/
-Backend/build/
-Backend/.gradle/
-Backend/*.jar
+Backend/challengeApp/build/
+Backend/challengeApp/.gradle/
 
 # IDE files
 .idea/
