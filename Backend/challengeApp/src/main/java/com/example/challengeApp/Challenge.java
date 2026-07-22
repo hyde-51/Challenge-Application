@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 @Entity
 public class Challenge {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "challengeMonth")

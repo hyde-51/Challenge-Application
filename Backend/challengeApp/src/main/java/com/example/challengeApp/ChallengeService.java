@@ -10,7 +10,7 @@ import java.util.Optional;
 @Service
 public class ChallengeService {
 
-    private Long nextId=1L;
+
 
     @Autowired
     ChallengeRepository challengeRepository;
@@ -25,7 +25,6 @@ public class ChallengeService {
 
     public boolean addChallenge(Challenge challenge){
         if(challenge!=null){
-            challenge.setId(nextId++);
             challengeRepository.save(challenge);
             return true;
         }

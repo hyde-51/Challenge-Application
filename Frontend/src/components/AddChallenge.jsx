@@ -18,30 +18,37 @@ function AddChallenge({onChallengeAdded}) {
   }
 
   return (
-    <>
+    <div className="card my-5">
+      <div className="card-header">Add New Challenge</div>
+      <div className="card-body">
       <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="month">Month</label>
+        <div className="mb-3">
+          <label htmlFor="month" className="form-label" for="floatingInput">Month</label>
           <input
             type="text"
             id="month"
+            className="form-control"
             value={month}
+            placeholder="e.g. January"
             onChange={(e) => setMonth(e.target.value)}
             required
           />
         </div>
-        <div>
-          <label htmlFor="description">Description</label>
+        <div className="mb-3">
+          <label htmlFor="description" className="form-label">Description</label>
           <textarea
             id="desc"
+            className="form-control"
             value={desc}
+            placeholder="Describe the challenge"
             onChange={(e) => setDesc(e.target.value)}
             required
           />
         </div>
-        <button>Submit</button>
+        <button className="btn btn-primary">Submit</button>
       </form>
-    </>
+       </div>
+    </div>
   );
 }
 
