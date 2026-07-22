@@ -23,7 +23,7 @@ function AddChallenge({onChallengeAdded}) {
       <div className="card-body">
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
-          <label htmlFor="month" className="form-label" for="floatingInput">Month</label>
+          <label htmlFor="month" className="form-label">Month</label>
           <input
             type="text"
             id="month"
